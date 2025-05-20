@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+          <div class="header__top">
+            <a href="#header" class="logo">Amazur</a>
+            <div class="burger-menu">
+              <div class="burger-menu__icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+            </div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="#benefit" class="menu__link">Преимущества
+                </a></li>
+                <li class="menu__item"><a href="#case" class="menu__link">Кейсы
+                </a></li>
+                <li class="menu__item"><a href="#work" class="menu__link">Схема работы
+                </a></li>
+                <li class="menu__item"><a href="#price" class="menu__link">Тарифы
+                </a></li>
+                <li class="menu__item"><a href="#application" class="menu__link">Контакты
+                </a></li>
+              </ul>
+            </nav>
+            <a href="tel:+79147281344" class="header__phone">+7-914-728-13-44</a>
+            <a href="#application" class="header__link">Бесплатно</a>
+          </div>
+           <div class="header__content">
+            <div class="header__info">
+          <h1 class="header__title">
+            ИИ-автоматизация на Wildberries:<span class="highlight__orange">реклама и цены</span>
+          </h1>
+          <a href="#application" class="header__info-link">Попробовать бесплатно</a>
+            </div>
+            <div class="header__img">
+              <img src="{{ url_for('static', filename='images/phone.png') }}" alt="">
+            </div>
+          </div>
+        </div>
+    </header>
+   <section class="task" id="task">
+      <div class="container">
+        <div class="task__inner">
+          <div class="task__problems">
+            <h2 class="task__title problems__title">Проблемы</h2>
+            <div class="task__descr solution__descr">
+            <img src="{{ url_for('static', filename='images/task-orange.svg') }}" alt="Описание проблемы">
+            <div class="task__text problems__text">
+            <p>Сложность рекламы на маркетплейса</p>
+            <p>Постоянные изменения алгоритмов</p>
+            <p>Перерасход бюджета, низкая эффективность, упущенные продажи</p>
+            </div>
+          </div>
+          </div>
+          <div class="task__arrow">
+            <img src="{{ url_for('static', filename='images/task-arrow.svg') }}" alt="стрелка">
+          </div>
+          <div class="task__solution">
+            <h2 class="task__title solution__title">Решения</h2>
+            <div class="task__descr solution__descr">
+            <img src="{{ url_for('static', filename='images/task-blue.svg') }}" alt="Описание решения">
+            <div class="task__text solution__text">
+            <p>ИИ решения по управлению рекламой и ценами</p>
+            <p>2 стратегии: максимум продаж или прибыли</p>
+            <p>Глубокая аналитика данных</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+   <section class="benefit" id="benefit">
+      <div class="container">
+        <h2 class="title_h2 title_beneft">
+          УВЕЛИЧЕНИЕ
+          ВАШЕЙ <span class="highlight__blue">ПРИБЫЛИ</span>
+        </h2>
+        <div class="benefit__inner">
+          <div class="benefit__money benefit__block">
+            <img src="{{ url_for('static', filename='images/benefit-blue.svg') }}" alt="Ключевые запросы">
+            <h3 class="benefit__subtitle money__subtitle">
+              Не платите за «воздух»
+            </h3>
+            <div class="benefit__text money__text">
+              <p>
+                Искуственный интеллект автоматически отключает убыточные ключевые запросы, снижает ставки на слабые позиции и перераспределяет бюджет на прибыльные товары. Экономия до 50% на рекламе — без потери охвата.
+              </p>
+            </div>
+          </div>
+          <div class="benefit__sales benefit__block">
+            <img src="{{ url_for('static', filename='images/benefit-orange.svg') }}" alt="Рост продаж">
+            <h3 class="benefit__subtitle sales__subtitle">
+              Продажи растут, 
+              время экономится
+            </h3>
+            <div class="benefit__text sales__text">
+              <p>
+                Искусственный интеллект анализирует спрос, корректирует ставки, ограничители расхода бюджета в реальном времени и увеличивает количество заказов. Результат: до 200% роста конверсий без траты каждый день нескольких часов на настройки
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <section class="case" id="case">
+      <div class="container">
+        <h2 class="title_h2 case_title">
+          КЕЙСЫ
+        </h2>
+        <div class="case__inner">
+          <div class="case__top">
+            <div class="case__block">
+              <img src="{{ url_for('static', filename='images/case-orange-small.svg') }} " alt="">
+              <h3 class="case__subtitle_top">
+                КРАСОТА
+              </h3>
+              <h3 class="case__subtitle_bottom">
+                категория
+              </h3>
+              <div class="case__text case__text-orangesmall ">
+                <p>
+                  остановлено падение,
+                  рекордная выручка
+                </p>
+              </div>
+            </div>
+            <div class="case__block">
+              <img src="{{ url_for('static', filename='images/case-blue-small.svg') }}" alt="">
+              <h3 class="case__subtitle_top">
+                ОДЕЖДА
+              </h3>
+              <h3 class="case__subtitle_bottom">
+                категория
+              </h3>
+              <div class="case__text case__text-bluesmall">
+                <p>
+                  +44% за две недели
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="case__bottom">
+            <div class="case__block">
+              <img src="{{ url_for('static', filename='images/case-blue-big.svg') }}" alt="">
+              <h3 class="case__subtitle_top case__subtitle_top--bluebig">
+                РОСТ С 30
+              </h3>
+              <h3 class="case__subtitle_bottom case__subtitle_bottom--bluebig">
+                до 60 млн
+              </h3>
+              <div class="case__text case__text-bluebig">
+                <p>
+                  х2 выручка в несезон
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="case__title-h3">
+          суммарная выручка клиентов 3 млрд руб/год
+        </h3>
+        <div class="case__img">
+        <img src="{{ url_for('static', filename='images/case-gra-1.jfif') }}" alt="График 1">
+        <img src="{{ url_for('static', filename='images/case-gra-2.jfif') }}" alt="График 2">
+      </div>
+      </div> 
+    </section>
+      <section class="work" id="work">
+      <div class="container">
+        <h2 class="title_h2 work__title">
+          КАК ЭТО РАБОТАЕТ?
+        </h2>
+        <div class="work__text">
+          <p>
+            Интеграция за 5 минут, понадобится только токен <span class="highlight__orange">API Wildberries</span>
+          </p>
+        </div>
+        <div class="work__inner">
+          <div class="work__block">
+            <h3 class="work__block--title">Telegram-бот</h3>
+            <img src="{{ url_for('static', filename='images/work-arrow.svg') }}" alt="Стрелка">
+            <div class="work__block--text">
+              <p>Простой интерфейс: кнопки, чат, уведомления</p>
+            </div>
+          </div>
+          <div class="work__block">
+            <h3 class="work__block--title">Поддержка через бота</h3>
+            <img src="{{ url_for('static', filename='images/work-arrow.svg') }}" alt="Стрелка">
+            <div class="work__block--text">
+            <p>FAQ + обращение к менеджеру</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__info">
+            <h2 class="title_h2 about__title">
+          КТО МЫ?
+            </h2>
+            <div class="about__text">
+              <p>
+                <span class="highlight__blue">AMAZUR</span> — 8 лет опыта работы на маркетплейсах
+              </p>
+            </div>
+              <div class="about__block--text">
+                <p>
+                  управляй продажами <span class="highlight__black"> легко</span>
+                </p>
+              </div>
+            </div>
+          <div class="about__img">
+            <div class="about__img--blockorange">
+              <img src="{{ url_for('static', filename='images/about-orange.svg') }}" alt="Оранжевый круг" class="about__img--client">
+              <div class="about__img--text">
+              <p class="about__text--number">90%</p>
+              <p class="about__text--client">довольных клиентов</p>
+            </div>
+            </div>
+            <div class="about__img--blockblue">
+              <p class="about__text--money">
+                4.7 млрд
+              </p>
+              <p class="about__text--info">
+                годовой    <span class="about__tern">оборот</span> <span class="highlight__orange highlight_our">наших</span> клиентов
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+   <section class="price" id="price">
+      <div class="container">
+        <h2 class="title_h2 price__title">
+          ТАРИФЫ
+            </h2>
+            <div class="price__inner">
+              <div class="price__block price__rice">
+                <h3 class="price__block--title highlight__white">
+                  ПРОДВИЖЕНИЕ 1.0
+                </h3>
+                <ul class="price__block--list price__rice--ul">
+                  <li class="price__block--item">
+                    <p>• Автоматическая пауза рекламы</p>
+                  </li>
+                  <li class="price__block--item">
+                    <p>• Создание новых кампаний</p>
+                  </li>
+                  <li class="price__block--item">
+                    <p>• Завершение «неэффективных» кампаний</p>
+                  </li>
+                  <li class="price__block--item">
+                    <p>• Чистка ключевых запросов</p>
+                  </li>
+                  <li class="price__block--item">
+                    <p>• Управление ставками</p>
+                  </li>
+                  <li class="price__block--item">
+                    <p>• Управление бюджетом</p>
+                  </li>
+                  <li class="price__block--item">
+                    <p>• Тестирование Аукциона и Авторекламы</p>
+                  </li>
+                </ul>
+                <div class="price__block--free">
+                  <p>Бесплатный пробный период — 7 дней</p>
+                </div>
+                <div class="price__block--cost">
+                  <p class="peice__block--month">7 990 ₽/мес</p>
+                  <p class="peice__block--year">или 86 292 ₽ / год</p>
+                </div>
+                <div class="price__block--button">
+                  <a href="#application" class="price__block--link">Попробовать бесплатно</a>
+                </div>
+              </div>
+              <div class="price__block price__rate">
+                <h3 class="price__block--title highlight__white">
+                  ЦЕНЫ 1.0
+                </h3>
+                <ul class="price__block--list price__rate--ul">
+                  <li class="price__block--item">
+                    <p>
+                      • Автоматическое исключение товаров из акций
+                    </p>
+                  </li>
+                  <li class="price__block--item">
+                    <p>• Максимизация прибыли</p>
+                  </li>
+                  <li class="price__block--item">
+                    <p>• Анализ и реакция на спрос</p>
+                  </li>
+                  <li class="price__block--item">
+                    <p>• Динамическое изменение при дефиците</p>
+                  </li>
+                  <li class="price__block--item">
+                    <p>• Возврат к нормальной цене</p>
+                  </li>
+                  <li class="price__block--item">
+                    <p>• Фиксация цены</p>
+                  </li>
+                </ul>
+                <div class="price__block--free">
+                  <p>Бесплатный пробный период — 7 дней</p>
+                </div>
+                <div class="price__block--cost">
+                  <p class="peice__block--month">2 990 ₽/мес</p>
+                  <p class="peice__block--year">или 30 888₽ / год</p>
+                </div>
+                <div class="price__block--button">
+                  <a href="#application" class="price__block--link">Попробовать бесплатно</a>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+     <section class="application" id="application">
+      <div class="container">
+        <h2 class="title_h2 application__title">
+          ГОТОВЫ ПРОКАЧАТЬ ПРОДАЖИ НА WILDBERIES?
+        </h2>
+        <p class="application__subtitle">
+          Оставьте заявку на демо-доступ и получите первую неделю пользования сервисом <span class="highlight__blue">бесплатно</span>
+        </p>  
+        <form class="application__form" method="POST" action="{{ url_for('send_telegram') }}">
+          <div class="form__block form__block--input">
+          <label class="application__input--label" for="name">Ваше имя</label>
+          <input type="text" id ="name" class="application__input application__input--name" name="name" id="name" placeholder="Имя" required>
+          </div>
+          <div class="form__block form__block--input">
+          <label class="application__input--label" for="tel">Телефон</label>
+          <input type="tel" id="tel" class="application__input application__input--tel" name="phone" id="tel" placeholder="+ 7 (999) 999-99-99" required >
+        </div>
+        <div class="form__block--checkbox">
+        <input  class="application__checkbox" type="checkbox" id="privacy" name="privacy" required>
+        <label class="application__checkbox--label" for="privacy">Я согласен с политикой конфиденциальности</label>
+      </div>
+      <button class="application__button" type="submit">Отправить</button>
+    </form>
+    </div>
+  </section> 
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#header" class="logo logo__footer">
+          AMAZUR
+        </a>
+        <nav class="footer__menu">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#benefit" class="footer__link">Преимущества
+            </a></li>
+            <li class="footer__item"><a href="#case" class="footer__link">Кейсы
+            </a></li>
+            <li class="footer__item"><a href="#work" class="footer__link">Схема работы
+            </a></li>
+            <li class="footer__item"><a href="#price" class="footer__link">Тарифы
+            </a></li>
+            <li class="footer__item"><a href="#application" class="footer__link">Контакты
+            </a></li>
+          </ul>
+        </nav>
+        <div class="footer__info">
+        <p class="footer__info--title">
+          КОНТАКТЫ
+        </p>
+        <p class="footer__info--text">
+          ИП Мазуренок Андрей <br>
+          ИНН: 254301978197<br>
+          ОГРН: 320253600035601
+        </p>
+        <a href="#" class="footer__info--policy">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__social">
+        <div class="footer__social--tel">
+          <p>Телефон:</p>
+          <a href="tel:+79147281344">+7 914 728 13 44</a>
+        </div>
+        <div class="footer__social--mail">
+          <p>Почта:</p>
+          <a href="mail:+amazur@group-vdk.ru">amazur@group-vdk.ru</a>
+        </div>
+        <div class="footer__social--icon">
+          <a href="https://t.me/AmazurVL" target="_blank" aria-label="Telegram">
+            <img src="{{ url_for('static', filename='images/tg-icon.svg') }}" alt="Телеграм">
+          </a>
+          <a a href="https://wa.me/+79147281344" target="_blank" aria-label="WhatsApp">
+          <img src="{{ url_for('static', filename='images/wh-icon.svg') }}" alt="Вацап">
+        </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <script> 
+      document.addEventListener('DOMContentLoaded', function() {
+      const burgerMenu = document.querySelector('.burger-menu');
+      const menu = document.querySelector('.menu');
+  
+      burgerMenu.addEventListener('click', function() {
+        burgerMenu.classList.toggle('active');
+        menu.classList.toggle('active');
+      });
+      });
+      
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('applicationForm');
+  const submitButton = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('tel').value;
+    const privacy = document.getElementById('privacy').checked;
+
+    const params = new URLSearchParams();
+    params.append('name', name);
+    params.append('phone', phone);
+    params.append('privacy', privacy);
+
+    // Disable the button and change text
+    submitButton.disabled = true;
+    submitButton.textContent = 'Отправка...';
+    submitButton.classList.add('sending'); // Add a class for styling
+
+    fetch('/send_telegram', {
+      method: 'POST',
+      body: params
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === 'success') {
+        form.reset();
+      }
+    })
+    .catch(error => {
+      console.error('Ошибка:', error);
+      // No message is displayed in case of error
+    })
+    .finally(() => {
+      // Re-enable the button and restore text
+      submitButton.disabled = false;
+      submitButton.textContent = 'Отправить';
+      submitButton.classList.remove('sending'); // Remove the class
+    });
+  });
+});
+  
+      
+    </script>
+  
+</body>
+</html>
