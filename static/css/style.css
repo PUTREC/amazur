@@ -853,6 +853,10 @@ input[type="checkbox"]:checked::after {
     border-style: solid;
 }
 
+.application__checkbox--label a{
+   color: #FF6707;
+}
+
 
 .application__button {
     font-size: 45px;

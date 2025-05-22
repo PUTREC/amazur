@@ -11,6 +11,10 @@ from flask import Flask, request, jsonify, render_template, redirect, url_for
 app = Flask(__name__, static_folder='static', template_folder='templates')
 app.config.from_object('config') # Загружаем конфигурацию из config.py
 
+@app.route('/privacy')
+def privacy():
+    """Отображает страницу с политикой конфиденциальности."""
+    return render_template('privacy.html')
 
 @app.route('/', methods=['GET'])
 def index():
